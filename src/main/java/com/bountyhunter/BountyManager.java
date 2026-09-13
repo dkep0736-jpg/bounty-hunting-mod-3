@@ -186,8 +186,8 @@ public final class BountyManager {
 		stack.set(DataComponents.CUSTOM_NAME, Component.literal("Bounty Compass: " + targetName)
 				.withStyle(style -> style.withItalic(false).withColor(ChatFormatting.RED)));
 		stack.set(DataComponents.LORE, new ItemLore(List.of(
-				gray("Points at " + targetName + " within " + (int) BountyHunterMod.CONFIG.compassRangeBlocks + " blocks."),
-				gray("Spins when they are out of range or in another dimension."),
+				gray("Points at " + targetName + " beyond " + (int) BountyHunterMod.CONFIG.compassRangeBlocks + " blocks."),
+				gray("Spins when they are in range or in another dimension."),
 				gray("Disappears when the bounty is claimed.")
 		)));
 		return stack;

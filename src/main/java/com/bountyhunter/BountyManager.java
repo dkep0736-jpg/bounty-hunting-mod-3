@@ -288,7 +288,7 @@ public final class BountyManager {
 			LodestoneTracker desired;
 			if (targetPlayer != null
 					&& targetPlayer.level().dimension().equals(holder.level().dimension())
-					&& holder.distanceToSqr(targetPlayer) <= rangeSq) {
+					&& holder.distanceToSqr(targetPlayer) >= rangeSq) {
 				desired = new LodestoneTracker(Optional.of(GlobalPos.of(targetPlayer.level().dimension(), targetPlayer.blockPosition())), false);
 			} else {
 				desired = new LodestoneTracker(Optional.empty(), false);

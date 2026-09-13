@@ -197,7 +197,7 @@ public final class BountyManager {
 	public static Optional<UUID> compassTarget(ItemStack stack) {
 		if (stack.isEmpty() || !stack.is(Items.COMPASS)) return Optional.empty();
 		CustomData custom = stack.get(DataComponents.CUSTOM_DATA);
-		if (custom == null || !custom.contains(COMPASS_TARGET_KEY)) return Optional.empty();
+		if (custom == null || !custom.copyTag().contains(COMPASS_TARGET_KEY)) return Optional.empty();
 		String raw = custom.copyTag().getStringOr(COMPASS_TARGET_KEY, "");
 		try {
 			return Optional.of(UUID.fromString(raw));

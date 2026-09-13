@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "bountyhunter",
+	"version": "${version}",
+	"name": "Bounty Hunter",
+	"description": "Place item bounties on players, hunt them with range-limited tracking compasses, and collect the reward.",
+	"authors": [
+		"You"
+	],
+	"contact": {},
+	"license": "MIT",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.bountyhunter.BountyHunterMod"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
